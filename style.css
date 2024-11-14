@@ -1,0 +1,992 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px;
+    background: #00abf0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-logo {
+    width: 80px; /* Adjust the width of the logo */
+    height: 80px;
+    border-radius: 50%;
+    background-color: #081b29;
+    padding: 5px;
+    object-fit: cover;
+    margin-right: 10px; /* Space between the logo and the brand name */
+
+}
+
+.logo {
+    position: relative;
+    font-size: 1.5rem;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .2s;
+}
+
+.navbar a{
+    font-size: 17px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 23px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #081b29;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home {
+    height: 100vh;
+    background: url('thee4.gif') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    padding-bottom: 20px;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.home-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    height: 50px;
+    margin-right: 0;
+}
+
+.home-content .btn-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 10px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+    margin-left: 20px;
+}
+
+.btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+.btn-box a:nth-child(2)::before {
+    background: #00abf0;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+    animation: manipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+
+.home-imgHover:hover {
+    background: #081b29;
+    opacity: .8;
+}
+
+.home-imgHover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120%;
+    height: 100%;
+    margin-bottom: -20%;
+    margin-top: -20%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 100;
+}
+
+
+/*  KEYFRAMES ANIMATION  */
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+        margin-right: 25px;
+        width: 42.7%;
+    }
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    background-color: #081b29;
+    padding-bottom: 6rem;
+}
+
+.heading {
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span {
+    color: #00abf0;
+}
+
+.about-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    margin-right: 0;
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid #00abf0;
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid #081b29;
+    border-bottom: .2rem solid #081b29;
+    border-left: .2rem solid #00abf0;
+    border-right: .2rem solid #00abf0;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+    color: #00abf0;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 2rem;
+}
+
+.btn-box.btns {
+    display: inline-block;
+    width: 8rem;
+    align-items: center;
+}
+
+/* Music & Mixes section */
+#music-mixes {
+    padding: 50px;
+    background-color: #081b29;
+}
+
+#music-mixes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span {
+    color: #00abf0;
+}
+
+.mixes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.audio-mixes, .video-mixes {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+/* Add space between video mixes */
+.video-mixes iframe {
+    margin-bottom: 10px; /* Adds space between each Vimeo embed */
+}
+
+.audio-mixes h3, .video-mixes h3 {
+    text-align: center;
+    color: boldgreen; /* Match your brand color */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.audio-mixes iframe {
+    border: none;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.music-links {
+    margin-top: 30px;
+}
+
+.music-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.music-links ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.music-links ul li a {
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.music-links ul li a:hover {
+    color: #fff;
+}
+
+/* Music Production Section */
+#music-production {
+    padding: 50px;
+    background-color: #081b29;
+    text-align: center;
+}
+
+#music-production h2 {
+    font-size: 2.5rem;
+    color: #00abf0;
+    margin-bottom: 20px;
+}
+
+#music-production p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.production-services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    min-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #00abf0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    color: #081b29; /* Bold green color for DJ EDDIE 254 */
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+#music-production a {
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#music-production a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .production-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        max-width: 100%;
+    }
+}
+
+
+#promo-videos {
+    padding: 50px;
+    background-color: #081b29;
+}
+
+#promo-videos h2 {
+    text-align: center;
+    color: white; /* Match your brand color */
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+span {
+    color: #00abf0;
+}
+
+.promo-videos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.promo-video {
+    width: 45%;
+    margin-bottom: 30px;
+    text-align: center; /* Center align the description */
+}
+
+.promo-video iframe {
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+}
+
+.video-description {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: boldgreen; /* Match your brand color */
+    text-align: center;
+}
+
+#events {
+    padding: 50px;
+    background-color: #081b29;
+}
+
+#events h2 {
+    text-align: center;
+    color: #00abf0;
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.events-slideshow {
+    width: 45%;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(35, 107, 83);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0, 1);
+}
+
+.event-slideshow h3 {
+    text-align: center;
+    color: #ededed;
+}
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.slide p {
+    margin-top: 10px;
+    color: #ededed;
+    font-size: 1.1rem;
+}
+
+.active2 {
+    display: block;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: boldgreen; /* Replace with your brand color */
+}
+
+#read-more-btn {
+background-color: #081b29;
+}
+
+#read-more-btn h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ededed;
+    padding-bottom: 40px;
+}
+
+.read-more {
+    color: white; /* Text color, adjust as needed */
+    align-items: center;
+
+}
+
+span {
+    color: #00abf0;
+}
+
+.read-more h3 {
+    color: #00abf0;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.3rem;
+}
+
+.read-more p {
+    text-align: start;
+}
+
+.two-column-section {
+    width: 100%; /* Section takes up full width */
+    padding: 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.row {
+    display: flex; /* Flexbox to align columns side by side */
+    justify-content: space-between; /* Space between the columns */
+}
+  
+.column {
+    width: 48%; /* Each column takes roughly half of the row (adjust for spacing) */
+    padding: 10px; /* Add some padding inside the columns */
+    box-sizing: border-box; /* Ensure padding doesn't affect column width */
+}
+
+.column h4 {
+    font-size: 2rem;
+    color: #00abf0;
+    padding: 20px;
+    text-align: start;
+}
+
+.column p {
+    text-align: center;
+}
+
+.column p ul{
+    text-align: center;
+}
+  
+@media screen and (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  
+    .column {
+      width: 100%; /* Columns take full width on small screens */
+    }
+}
+
+/* DJ Services Rate Card Section */
+.rate-card-section {
+    padding: 50px;
+    background-color: #081b29;
+    text-align: center;
+}
+
+.rate-card-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00abf0;
+}
+
+.rate-card-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.rate-card-section span {
+    color: #fff;
+}
+
+.rate-card-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rate-card-table thead th {
+    padding: 15px;
+    background-color: #00abf0; /* Bold green color */
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.rate-card-table tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #333;
+}
+
+.rate-card-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.rate-card-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.rate-card-section p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffffff;
+}
+  
+@media (max-width: 768px) {
+    .rate-card-table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+    .rate-card-table thead {
+        display: none;
+    }
+    .rate-card-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .rate-card-table td {
+        display: block;
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .rate-card-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+/* Rider Section */
+.rider-section {
+    padding: 50px;
+    background-color: #081b29;
+    text-align: center;
+}
+
+.rider-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.rider-section span {
+    color: #00abf0;
+}
+
+.rider-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.rider-details {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+
+.rider-details h3 {
+    font-size: 1.8rem;
+    color: #00abf0; /* Bold green color */
+    margin-bottom: 15px;
+}
+
+.rider-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.rider-details ul li {
+    margin-bottom: 10px;
+}
+
+.rider-section p {
+    font-size: 1rem;
+    color: #00abf0;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px;
+    background-color: #081b29;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00abf0;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    background-color: #00abf0; /* Bold green color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #32cd32;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #32cd32;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+  
